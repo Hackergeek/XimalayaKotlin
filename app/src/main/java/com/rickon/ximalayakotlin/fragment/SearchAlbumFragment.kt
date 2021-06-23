@@ -32,7 +32,7 @@ class SearchAlbumFragment : BaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.recylerview, container, false)
         if (arguments != null) {
-            albumsList = (arguments as Bundle).getParcelableArrayList("searchAlbum")
+            albumsList = (arguments as Bundle).getParcelableArrayList("searchAlbum")!!
         }
 
         recyclerView = view.findViewById(R.id.recyclerview) as RecyclerView

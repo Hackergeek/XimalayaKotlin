@@ -87,7 +87,7 @@ class AlbumActivity : BaseActivity(), OnClickListener {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_album)
 
-        album = intent.getParcelableExtra("album")
+        album = intent.getParcelableExtra("album")!!
         currentAlbumId = album.id.toString()
 
         initList()

@@ -30,7 +30,7 @@ class SearchRadioFragment : BaseFragment() {
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
         val view = inflater.inflate(R.layout.recylerview, container, false)
         if (arguments != null) {
-            radiosList = (arguments as Bundle).getParcelableArrayList("searchRadio")
+            radiosList = (arguments as Bundle).getParcelableArrayList("searchRadio")!!
         }
 
         recyclerView = view.findViewById(R.id.recyclerview) as RecyclerView

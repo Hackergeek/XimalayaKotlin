@@ -82,7 +82,7 @@ object NetworkUtil {
                 if (n != null) {
                     val nc = cm.getNetworkCapabilities(n)
 
-                    return nc.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) || nc.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
+                    return nc!!.hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR) || nc!!.hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
                 }
             }
         }
